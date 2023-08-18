@@ -13,176 +13,217 @@
   <body>
     <main class="content-wrapper">
       <div class="container-xxl flex-grow-1 container-p-y">
-        <div class="card m-4 p-4" style="background-color: #242333;">
+        <div class="card m-4 p-4" style="background-color: #242333">
           <div class="card-body">
-            <div class="row" style="perspective: 1000px; margin-bottom: 30px;">
-                <div class="screen"></div>
+            <div class="row" style="perspective: 1000px; margin-bottom: 30px">
+              <div class="screen"></div>
             </div>
-            <div class="row">
-              <div class="column column-one col-3">
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
+            <div class="mb-3 col-lg-6 col-xl-3 col-12 mb-0">
+              <label>Select a movie</label>
+              <select id="movie" aria-label="Default select example" class="form-select cursor-pointer">
+                <option value="10">Avengers Endgame ($10)</option>
+                <option value="12">Joker ($12)</option>
+                <option value="8">Toy Story 4 ($8)</option>
+                <option value="9">The Lion King ($9)</option>
+              </select>
+            </div>
+            <div class="row seats-area">
+              <div class="column col-3">
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
               </div>
-              <div class="column column-one col-6">
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
+              <div class="column col-6">
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
               </div>
-              <div class="column column-one col-3">
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine occupied m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
-                <button class="btn btn-sm pull-up-mine not-selected m-1 seat"><i class="bx bx-chair"></i></button>
+              <div class="column col-3">
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat occupied"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
+                <button class="btn btn-sm pull-up-mine bx bx-chair m-1 seat"></button>
               </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+              <p class="text">You have <span id="count" class="text-primary">0</span> seats for a price of $<span id="price" class="text-primary">0</span></p>
             </div>
           </div>
         </div>
